@@ -1,6 +1,7 @@
 // import { useCallback } from "react";
 import { TextField } from "@mui/material";
 // import { useNavigate } from "react-router-dom";
+import "./css/global.css"
 import "./css/login.css";
 const LoginPage = () => {
 
