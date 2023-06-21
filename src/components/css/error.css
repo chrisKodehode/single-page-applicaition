@@ -4,3 +4,139 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-in-left {
+    0% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .error1 {
+    position: absolute;
+    top: 540px;
+    left: 241px;
+    font-weight: 500;
+    -webkit-text-stroke: 1px red;
+  }
+
+  .sign-error-01-1-icon {
+    position: absolute;
+    top: 0;
+    left: 119px;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    opacity: 0;
+  }
+
+  .sign-error-01-1-icon.animate {
+    animation: 1s ease 0s infinite normal forwards fade-in;
+  }
+
+  .login-failed,
+  .try-again {
+    position: relative;
+    font-weight: 500;
+  }
+
+  .login-failed {
+    -webkit-text-stroke: 1px #414141;
+    opacity: 0;
+  }
+
+  .login-failed.animate {
+    animation: 1s ease 0s 1 normal forwards slide-in-left;
+  }
+
+  .try-again {
+    font-size: var(--font-size-7xl);
+    font-family: var(--font-inter);
+    color: var(--color-white);
+    text-align: left;
+  }
+
+  .try-again-btn {
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-3xs);
+    background-color: var(--color-red);
+    align-self: stretch;
+    border-radius: var(--br-mini);
+    height: 67px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .frame2,
+  .frame3 {
+    position: absolute;
+    width: 487px;
+    overflow: hidden;
+  }
+
+  .frame3 {
+    top: 438px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 19px;
+  }
+
+  .frame2 {
+    top: 225px;
+    left: 76px;
+    height: 572px;
+    font-size: var(--font-size-21xl);
+    color: var(--color-darkslategray-100);
+  }
+
+  .error,
+  .error-page {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .error {
+    border-radius: var(--br-xl);
+    background-color: var(--color-white);
+    width: 640px;
+    height: 823px;
+    flex-shrink: 0;
+  }
+
+  .error-page {
+    background-color: var(--color-steelblue);
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-109xl) 0;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font-size: var(--font-size-29xl);
+    color: var(--color-red);
+    font-family: var(--font-inter);
+  }  
