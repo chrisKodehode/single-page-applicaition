@@ -44,6 +44,7 @@ const ErrorPage = () => {
     <div className="error-page">
       <div className="error">
         <div className="error1">ERROR</div>
+        
         <div className="frame2">
           <img
             className="sign-error-01-1-icon"
@@ -51,6 +52,7 @@ const ErrorPage = () => {
             src={ErrorSign}
             data-animate-on-scroll
           />
+
           <div className="frame3">
             <div
               className="login-failed"
@@ -61,6 +63,7 @@ const ErrorPage = () => {
               <div className="try-again">TRY AGAIN</div>
             </button>
           </div>
+
         </div>
       </div>
     </div>

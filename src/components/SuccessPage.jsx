@@ -59,6 +59,7 @@ const SuccessPage = () => {
               src={CheckmarkLogo}
               data-animate-on-scroll
             />
+            
           </div>
         </div>
       </div>
