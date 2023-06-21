@@ -1,13 +1,13 @@
-import LoginPage from "./components/LoginPage"
+// import LoginPage from "./components/LoginPage"
 import SuccessPage from "./components/SuccessPage"
-import ErrorPage from "./components/ErrorPage"
+// import ErrorPage from "./components/ErrorPage"
 
 function App() {
   return (
     <div>
-      <LoginPage />
+      {/* <LoginPage /> */}
       <SuccessPage />
-      <ErrorPage />
+      {/* <ErrorPage /> */}
     </div>
   )
 }

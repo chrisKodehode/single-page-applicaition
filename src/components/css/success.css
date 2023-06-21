@@ -4,3 +4,139 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@keyframes slide-in-left {
+    0% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .success1,
+  .welcome {
+    position: absolute;
+    font-weight: 500;
+  }
+
+  .welcome {
+    top: 663px;
+    left: 217px;
+    -webkit-text-stroke: 1px #414141;
+    opacity: 0;
+  }
+
+  .welcome.animate {
+    animation: 1s ease 0s 1 normal forwards slide-in-left;
+  }
+  
+  .success1 {
+    top: 315px;
+    left: 130px;
+    -webkit-text-stroke: 1px;
+  }
+
+  .click-me {
+    position: relative;
+    font-size: var(--font-size-7xl);
+    font-weight: 500;
+    font-family: var(--font-inter);
+    color: #000;
+    text-align: left;
+    display: inline-block;
+    width: 138px;
+    flex-shrink: 0;
+  }
+
+  .click-me-btn {
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-3xs);
+    background-color: #00ff47;
+    position: absolute;
+    top: 505px;
+    left: 0;
+    border-radius: var(--br-mini);
+    width: 487px;
+    height: 67px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .checkmark-circle-icon,
+  .frame,
+  .frame1 {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+  }
+
+  .checkmark-circle-icon {
+    left: 119px;
+    width: 250px;
+    height: 250px;
+    opacity: 0;
+  }
+
+  .checkmark-circle-icon.animate {
+    animation: 1s ease 0s infinite normal forwards fade-in;
+  }
+
+  .frame,
+  .frame1 {
+    left: 0;
+    width: 487px;
+    height: 572px;
+  }
+
+  .frame {
+    top: 225px;
+    left: 76px;
+    font-size: var(--font-size-29xl);
+  }
+
+  .success,
+  .success-page {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .success {
+    border-radius: var(--br-xl);
+    background-color: var(--color-white);
+    width: 640px;
+    height: 823px;
+    flex-shrink: 0;
+  }
+
+  .success-page {
+    background-color: var(--color-steelblue);
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-109xl) 0;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font-size: var(--font-size-21xl);
+    color: var(--color-darkslategray-100);
+    font-family: var(--font-inter);
+  }
