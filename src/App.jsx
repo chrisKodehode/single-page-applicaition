@@ -1,25 +1,16 @@
+import {Route, Routes} from "react-router-dom";
 import LoginPage from "./components/LoginPage"
 import SuccessPage from "./components/SuccessPage"
 import ErrorPage from "./components/ErrorPage"
 
 function App() {
   return (
-    <div>
-      <LoginPage />,
-      <SuccessPage />,
-      <ErrorPage />
-    </div>
+    <Routes>
+      <Route path="/" element={<LoginPage />} />
+      <Route path="/success" element={<SuccessPage />} />
+      <Route path="/error" element={<ErrorPage />} />
+    </Routes>
   )
 }
-
-// function App() {
-//   return (
-//     <div>
-//       <LoginPage />,
-//       <SuccessPage />,
-//       <ErrorPage />
-//     </div>
-//   )
-// }
 
 export default App
