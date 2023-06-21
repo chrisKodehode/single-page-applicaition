@@ -2,7 +2,10 @@
 import { TextField } from "@mui/material";
 import "./css/global.css"
 import "./css/login.css";
+import { useNavigate } from "react-router-dom";
 const LoginPage = () => {
+
+  const navigate = useNavigate();
 
   return (
     <div className="sign-up-page">
@@ -11,6 +14,8 @@ const LoginPage = () => {
         <button
           className="sign-up-btn"
           id="sign-up-btn"
+          // {/* onClick={() => navigate("/success")} will re-direct the LoginPage to the SuccessPage */}
+          onClick={() => navigate("/success")}
         >
           <div className="sign-up">SIGN UP</div>
         </button>

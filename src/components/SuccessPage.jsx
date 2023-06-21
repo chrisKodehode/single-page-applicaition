@@ -2,8 +2,11 @@ import "./css/global.css"
 import "./css/success.css"
 import { useEffect } from "react";
 import CheckmarkLogo from "../assets/images/checkmark-circle.svg";
+import { useNavigate } from "react-router-dom";
 
 const SuccessPage = () => {
+  const navigate = useNavigate();
+
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(
       "[data-animate-on-scroll]"
@@ -45,7 +48,8 @@ const SuccessPage = () => {
         <div className="frame">
           <div className="success1">SUCCESS</div>
           <div className="frame1">
-            <button className="click-me-btn">
+          {/* { onClick={() => navigate("/error")} will re-direct the SuccessPage to the ErrorPage */}
+            <button className="click-me-btn" onClick={() => navigate("/error")}>
               <div className="click-me">CLICK ME</div>
             </button>
 

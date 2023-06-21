@@ -2,8 +2,12 @@ import "../components/css/global.css";
 import "../components/css/error.css";
 import { useEffect } from "react";
 import ErrorSign from "../assets/images/signerror01-1.svg";
+import { useNavigate } from "react-router-dom";
 
 const ErrorPage = () => {
+  // Declare and initialize a variable named "navigate" and assign useNavigate function to it
+  const navigate = useNavigate();
+
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(
       "[data-animate-on-scroll]"
@@ -52,7 +56,8 @@ const ErrorPage = () => {
               className="login-failed"
               data-animate-on-scroll
             >{`LOGIN FAILED `}</div>
-            <button className="try-again-btn">
+            {/* onClick={() => navigate("/")} will re-direct the error page to the LoginPage */}
+            <button className="try-again-btn" onClick={() => navigate("/")}>
               <div className="try-again">TRY AGAIN</div>
             </button>
           </div>
